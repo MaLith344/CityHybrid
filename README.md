@@ -12,8 +12,8 @@ This project focuses on the conceptual design and bench-scale demonstration of a
 * Fabricating a bench-scale demonstrator to validate power flow, system integration, and load response.
 
 ### Team Members
-* E/21/089
-* E/21/091
-* E/21/344
+* E/21/089 - Dewpura A. S.
+* E/21/091 - Dharmapriya B. U. G.
+* E/21/344 - Samarakoon M. M.
 
-**Supervisor:** Prof. Asanga Ratnaweera
+**Supervisor:** Prof. A. C. Ratnaweera
