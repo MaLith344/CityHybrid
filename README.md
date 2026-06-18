@@ -11,6 +11,15 @@ This project focuses on the conceptual design and bench-scale demonstration of a
 * Developing an energy management strategy for optimized hybrid operation.
 * Fabricating a bench-scale demonstrator to validate power flow, system integration, and load response.
 
+* ## Repository Structure
+
+- `CAD/` - Simplified vehicle CAD model used for analysis.
+- `CFD/` - Fluent/ANSYS CFD setup files and aerodynamic results.
+- `MATLAB/` - Vehicle parameter and powertrain calculation scripts.
+- `Data/` - Drive cycle and input datasets.
+- `documentation/` - Project proposal, presentations, and progress documents.
+- `reference-documents/` - Datasheets, papers, and supporting references.
+
 ### Team Members
 * E/21/089 - Dewpura A. S.
 * E/21/091 - Dharmapriya B. U. G.
