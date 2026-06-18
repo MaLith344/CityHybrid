@@ -16,7 +16,7 @@ This project focuses on the conceptual design and bench-scale demonstration of a
 - `CAD/` - Simplified vehicle CAD model used for analysis.
 - `CFD/` - Fluent/ANSYS CFD setup files and aerodynamic results.
 - `MATLAB/` - Vehicle parameter and powertrain calculation scripts.
-- `Data/` - Drive cycle and input datasets.
+- `data/` - Drive cycle and input datasets.
 - `documentation/` - Project proposal, presentations, and progress documents.
 - `reference-documents/` - Datasheets, papers, and supporting references.
 
