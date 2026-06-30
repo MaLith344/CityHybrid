@@ -5,6 +5,9 @@
 *.mex*
 *.log
 slprj/
+*.slxc
+*.autosave
+*.original
 *_ert_rtw/
 mdl_info.mat
 
@@ -32,3 +35,4 @@ Desktop.ini
 .vscode/
 .idea/
 *.swp
+
