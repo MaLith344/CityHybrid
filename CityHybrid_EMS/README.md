@@ -83,17 +83,6 @@ The top-level Simulink model implements a closed-loop series hybrid energy flow.
 
 ### Signal Flow Summary
 
-```
-colombo_drive_cycle ──► Vehicle_Load_Model ──► I_Load ──► Battery_Subsystem
-                              ▲                                │         │
-                          V_bus (feedback)               soc ◄┘    V_bus ◄┘
-                                                          │              │
-                                                  Thermostat_EMS    APU_Generator_Model
-                                                          │              │
-                                                     APU_Cmd ──────────►│
-                                                                    I_APU ──► Battery_Subsystem
-```
-
 ---
 
 ## 4. Mathematical Models
@@ -205,7 +194,11 @@ ENGINE_OFF  ──[soc ≤ 0.30]──►  ENGINE_STARTING  ──[t_start ≥ 2
 
 The `APU_Generator_Model` subsystem implements a simple two-position switch:
 
-$$I_{\text{APU}} = \begin{cases} \dfrac{P_{\text{APU,optimal}} \times \eta_{\text{gen}}}{V_{\text{bus}}} & \text{if } \texttt{APU\_Cmd} = 1 \\ 0 & \text{if } \texttt{APU\_Cmd} = 0 \end{cases}$$
+---
+
+$$I_{\text{APU}} = \begin{cases} \dfrac{P_{\text{APU,optimal}} \times \eta_{\text{gen}}}{V_{\text{bus}}} & \text{if } \text{APU\_Cmd} = 1 \\ 0 & \text{if } \text{APU\_Cmd} = 0 \end{cases}$$
+
+---
 
 **APU parameters:**
 
@@ -396,13 +389,10 @@ In a parallel configuration, the ICE would be mechanically coupled to the wheels
 
 | Role | Member | Specialisation |
 |---|---|---|
-| Mechanical Design | E/21/089 — Dewpura A. S. | Vehicle dynamics, chassis, thermal |
-| Mechatronics A — Simulation | E/21/091 — Dharmapriya B. U. G. | 1D Simulink modelling, component sizing |
-| Mechatronics B — Control | E/21/344 — Samarakoon M. M. | Stateflow EMS, firmware, bench hardware |
+| Mechanical Design | E/21/089 — Dewpura A. S. | Vehicle dynamics, chassis, component sizing |
+| Mechatronics A — Simulation | E/21/091 — Dharmapriya B. U. G. | firmware, bench hardware |
+| Mechatronics B — Control | E/21/344 — Samarakoon M. M. | Stateflow EMS, 1D Simulink modelling, component sizing |
 | Supervisor | Prof. A. C. Ratnaweera | Department of Mechanical Engineering |
-
-**Course:** ME 325 — Mechanical Engineering Group Project
-**Institution:** Faculty of Engineering, University of Peradeniya, Sri Lanka
 
 ---
 
